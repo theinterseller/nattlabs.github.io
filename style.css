@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-container {
+    display: block;
+    padding: 20px;
+    max-width: 2600px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 30%; /* Adjust as needed */
+    height: 30%; /* Adjust as needed */
+    object-fit: cover; /* Keeps aspect ratio */
+    border-radius: 50%; /* Circular image */
+    float: left; /* Align image to the left */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.profile-text {
+    /* The text will automatically wrap around the image */
+    
+}
+.picture-img{
+    width: 100%;
+
+}
+/* Clear float for any elements following the container */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (min-width: 600px) {
+    .profile-container {
+        display: block;
+        padding-top: 150px;
+    }
+
+    .profile-image {
+        margin-right: 100px;
+    }
+
+    .profile-text {
+        font-size: 42px;
+
+    }
+    .picture-img{
+        width: 90%;
+        padding-left: 5%;
+
+    
+    }
+}
